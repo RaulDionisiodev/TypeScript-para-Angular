@@ -101,3 +101,11 @@ No construtor da classe filha precisamos chamar o método super para invocar o c
 Quando temos uma função onde não temos o retorno definido podemos usar any para o tipo desse retorno. Porém se, por exemplo, atribuirmos o retorno dessa função a uma variável essa variável também será do tipo any, o que não é recomendado.
 
 Para resolver esse problema podemos usar generics. Isso nos permitirá passar o tipo que queremos que a função retorne no momento em que ela for chamada.
+
+### Decorators
+
+Decorators são usados para 'decorar' uma função para que ela dispare outra ação quando for chamada.
+Generics ainda é uma feature experimental no TS e precisa ser ativada no tsconfig pela propriedade 'experimentalDecorators'
+
+
+#### [Código fonte do curso](https://github.com/felipeAguiarCode/angular-playground/tree/main/C2%20-%20Typescript%20para%20Angular)
