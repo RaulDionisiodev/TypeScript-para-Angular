@@ -82,3 +82,22 @@ Interfaces são utilizadas para trabalhar com classes. È um contrato que precis
 Interfaces e tipos podem ter propriedades somente leitura (propriedade que não pode ser modificada após a criação) e multi tipos.
 
 Quando as interfaces são convertidas para JS elas viram objetos assim com os types também viram. As interfaces sãomais importantes em tempo de desenvolvimento.
+
+### Classes
+
+Uma classe é como uma 'forma' que pode ser reutilizada em vários momentos.
+Os modificadores de acesso das classes TS são chamadas, na documentação, de data modifiers. Para usá-los devemos usar as 
+palavras chave public, private e protect. O padrão (caso não seja colocado nenhum data modifier explicitamente) é public.
+Os data modifiers são aplicáveis em métodos e atributos.
+
+Para criar subclasses usamos a palavra chave extends:
+
+```class Son extends Father{}```
+
+No construtor da classe filha precisamos chamar o método super para invocar o construtor da classe pai.
+
+### Generics
+
+Quando temos uma função onde não temos o retorno definido podemos usar any para o tipo desse retorno. Porém se, por exemplo, atribuirmos o retorno dessa função a uma variável essa variável também será do tipo any, o que não é recomendado.
+
+Para resolver esse problema podemos usar generics. Isso nos permitirá passar o tipo que queremos que a função retorne no momento em que ela for chamada.
